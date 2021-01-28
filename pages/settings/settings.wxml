@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="wx-cells">
+    <view class="wx-cell" data-route="../profile/profile" data-id="1" bindtap="navToPage">
+      <image class="wx-cell-icon user-avatar" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user-info">
+        <text class="user-info-text">{{userInfo.nickName}}</text>
+        <text class="user-info-text user-info-uid">City: {{userInfo.city}}</text>
+      </view>
+      <image class="wx-cell-arrow" src="../../assets/right-gray.png"></image>
+    </view>
+  </view>
+  <view class="wx-cells">
+    <view class="wx-cell" data-route="../info/info" bindtap="navToPage">
+      <image class="wx-cell-icon" src="../../assets/feedback.png"></image>
+      <text class="wx-cell-text">完善信息</text>
+      <image class="wx-cell-arrow" src="../../assets/right-gray.png"></image>
+    </view>
+  </view>
+  <view class="wx-cells">
+    <view class="wx-cell" data-route="../certification/certification" bindtap="navToPage">
+      <image class="wx-cell-icon" src="../../assets/language.png"></image>
+      <text class="wx-cell-text">认证</text>
+      <image class="wx-cell-arrow" src="../../assets/right-gray.png"></image>
+    </view>
+  </view>
+
+  <view class="wx-cells">
+    <view class="wx-cell" data-route="../life/fileUpload" bindtap="navToPage">
+      <!-- <image class="wx-cell-icon" src="../../assets/language.png"></image> -->
+      <mp-icon icon="album" type="field" color="#99ccff" size="{{32}}"></mp-icon>
+      <text class="wx-cell-text">上传生活照</text>
+      <image class="wx-cell-arrow" src="../../assets/right-gray.png"></image>
+    </view>
+  </view>
+
+  <view class="wx-cells">
+    <view class="wx-cell" data-route="../about/about" bindtap="navToPage">
+      <image class="wx-cell-icon" src="../../assets/about.png"></image>
+      <text class="wx-cell-text">关于我们</text>
+      <image class="wx-cell-arrow" src="../../assets/right-gray.png"></image>
+    </view>
+  </view>
+  <!-- <view class="wx-cells" wx:if="{{!userInfo.gender}}">
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+  </view> -->
+</view>
